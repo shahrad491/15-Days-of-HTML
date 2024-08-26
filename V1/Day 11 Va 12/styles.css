@@ -1,0 +1,24 @@
+.Main {
+  width: 600px;
+  height: 200px;
+  border: 1px solid black;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 100px;
+  margin-top: 40px;
+}
+.Option {
+  display: none;
+}
+.Option:checked + label {
+  background: lightblue;
+}
+label {
+  border: 1px solid black;
+  padding: 7px;
+  background: white;
+}
+label:hover {
+  cursor: pointer;
+}

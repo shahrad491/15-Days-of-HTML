@@ -1,0 +1,91 @@
+main {
+  background: whitesmoke;
+}
+.Stats {
+  padding: 2rem 1rem;
+}
+
+.StatSec ul {
+  padding: 0;
+  box-shadow: 0px 0px 5px gray;
+  background: white;
+  border-radius: 0.8rem;
+}
+.StatSec ul li {
+  list-style: none;
+  display: block;
+  border-bottom: 1px solid lightgray;
+  padding: 1rem 0.2rem 1rem 1.5rem;
+  position: relative;
+}
+.StatSec ul li:last-child {
+  border-bottom: 0;
+}
+.StatSec ul li strong {
+  display: block;
+  padding-bottom: 0.7rem;
+  font-size: 1.8rem;
+}
+.Change {
+  font-size: 1rem;
+  color: gray;
+}
+.Num {
+  color: darkmagenta;
+  font-size: 2rem;
+  padding-right: 1rem;
+}
+.Precent {
+  text-align: center;
+  align-content: center;
+  border-radius: 0.5rem;
+  position: absolute;
+  padding: 0 0.6rem;
+  width: 3.6rem;
+  height: 1.3rem;
+  right: 0;
+  bottom: 0;
+  margin: 1rem 1.8rem;
+}
+.PUp {
+  color: darkgreen;
+  background: lightgreen;
+}
+.PDown {
+  background: lightcoral;
+  color: darkred;
+}
+.Arrow {
+  display: inline;
+  padding-right: 1.3rem;
+  background: url("./assets/arrow-up.svg") no-repeat;
+}
+.PDown .Arrow {
+  background: url("./assets/arrow-down.svg") no-repeat;
+}
+@media screen and (min-width: 600px) {
+  .Stats h2 {
+    margin-left: 1.6rem;
+  }
+  .StatSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .StatSec ul {
+    columns: 3;
+    flex-grow: 4;
+    max-width: 90rem;
+  }
+  .StatSec ul li {
+    min-width: 20rem;
+    border-bottom: 0;
+    border-right: 1px solid lightgray;
+  }
+  .StatSec ul li:last-of-type {
+    border-right: 0;
+  }
+  main {
+    min-width: max-content;
+  }
+}

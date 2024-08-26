@@ -1,0 +1,15 @@
+* {
+  color-scheme: light dark;
+}
+body {
+  padding: 2rem;
+}
+li {
+  color: yellow;
+}
+a:hover {
+  color: green;
+}
+span {
+  color: red;
+}

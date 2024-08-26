@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.Blog {
+  margin: 1rem;
+}
+.BlogHead {
+  padding: 0 3rem;
+  text-align: center;
+}
+.BlogHead strong {
+  font-size: 2rem;
+  padding-bottom: 9rem;
+}
+.BlogHead p {
+  font-size: 1.1rem;
+  max-width: 40rem;
+  padding: 1.4rem;
+  padding-bottom: 1rem;
+  margin: 0 auto;
+  color: gray;
+}
+.BlogCards {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.BlogCards .BCard {
+  box-shadow: 0px 0px 1rem gray;
+  margin: 0 0.7rem;
+  display: inline-block;
+  border-radius: 0.5rem;
+  background: white;
+}
+.CardTop {
+  width: 100%;
+  height: 12rem;
+  background: red;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+.CardBottom {
+  height: 20rem;
+  padding: 0 0.6rem 0rem 1.2rem;
+  position: relative;
+}
+.BCType {
+  color: darkblue;
+  display: block;
+  padding: 0.8rem 0;
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+.BCTitle {
+  display: block;
+  font-size: 1.15rem;
+  padding-bottom: 1rem;
+}
+.BCShortDescription {
+  color: gray;
+  padding-bottom: 1rem;
+}
+.BCInfo {
+  position: absolute;
+  width: 90%;
+  bottom: 8%;
+}
+.BCInfo ul li:first-child {
+  list-style: none;
+}
+.BCInfo ul {
+  display: flex;
+  justify-content: start;
+  margin: 0;
+}
+.BCInfo ul li {
+  margin: 0rem;
+  margin-right: 1.2rem;
+  color: gray;
+  font-size: 1.1rem;
+}
+.BCInfo ul li::marker {
+  list-style-position: inside;
+  padding-right: 0rem;
+}
+.BCInfo ul li:last-child {
+  display: none;
+}
+.BCInfo ul {
+  columns: 3;
+}
+.AuthorPic img {
+  margin-right: 1rem;
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  float: left;
+  background: url("https://images.unsplash.com/photo-1472099645785-5658abf4ff4e");
+}
+.AuthorFName {
+  font-size: 1.15rem;
+  font-weight: bold;
+}
+@media screen and (max-width: 766px) {
+  .BlogHead {
+    padding: 0;
+  }
+  .BlogCards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0;
+  }
+  .BlogCards .BCard {
+    width: 90dvw;
+    margin-bottom: 1rem;
+    flex-shrink: 20%;
+  }
+}

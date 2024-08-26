@@ -1,0 +1,150 @@
+@import url("./assets/Inter/Inter-VariableFont_opsz,wght.ttf");
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+main {
+  font-family: "Inter", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9fafb;
+}
+.PricingSec {
+  width: 90%;
+  padding: 1.8rem 0.4rem;
+}
+.SecHeading {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.SecHInfo {
+  padding: 0.5rem 5px 1.6rem 5px;
+  color: gray;
+  text-align: center;
+  text-align-last: center;
+  font-size: 1.15rem;
+}
+.Card {
+  box-shadow: gray 0px 0px 8px;
+}
+.CardTop {
+  background: white;
+  padding: 1.3rem 0 0 1.2rem;
+}
+.CTitle {
+  display: block;
+  width: 100%;
+  font-size: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+.CDiscription {
+  font-size: 1.1rem;
+  padding-right: 0.8rem;
+}
+.CSeperator strong {
+  padding: 1.5rem 0 0 0;
+  display: inline-block;
+  color: blue;
+  font-size: 1rem;
+  font-weight: 550;
+  margin-bottom: 0.5rem;
+}
+.CSeperator hr {
+  display: block;
+  color: gray;
+  height: 0;
+  width: 60%;
+  z-index: 4;
+  border-bottom: 1px solid gray;
+}
+.CPros {
+  padding: 1rem 0 0.5rem 1rem;
+}
+
+.CPros ul li {
+  list-style: url("./assets/check-icon.svg");
+  font-size: 2rem;
+  padding-bottom: 0.4rem;
+}
+.CPros ul li p {
+  font-size: 1.1rem;
+}
+.CPrice {
+  padding: 1.2rem 1.2rem 0 1.2rem;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.CPrice p {
+  display: block;
+}
+.CPrice a {
+  padding: 0.8rem 0 1rem 0;
+}
+.CPrice1P {
+  font-size: 1.1rem;
+  padding-bottom: 0.8rem;
+}
+.CPriceNum {
+  font-size: 2rem;
+  position: relative;
+  padding-right: 2.8rem;
+}
+.CPriceNum span {
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  top: 12%;
+  position: absolute;
+}
+.CPLearnMore {
+  color: lightslategray;
+  text-decoration: underline;
+}
+.CPrice button {
+  color: white;
+  background-color: #1f2937;
+  width: 100%;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 6px;
+}
+@media screen and (min-width: 600px) {
+  * {
+    font-size: 90%;
+  }
+  .PricingSec {
+    padding: 3rem 1rem 1.5rem 1rem;
+  }
+  .Card {
+    display: flex;
+    padding-bottom: 1rem;
+  }
+  .CardTop {
+    padding: 3.5rem 5rem 1rem 3rem;
+    width: 72%;
+  }
+  .CPrice {
+    width: 28%;
+  }
+  .CSeperator hr {
+    display: inline-block;
+    padding: 0 4rem 0.26rem 0;
+    margin-left: 1rem;
+    border-top: 1px solid gray;
+    border-bottom: 0;
+  }
+  .CPros ul {
+    columns: 2;
+  }
+  .CPrice {
+    padding: 2rem 3rem;
+    font-size: 200%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,167 @@
+main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+}
+.LoginSec {
+  width: 30%;
+  height: 70%;
+}
+.Login {
+  height: 100%;
+}
+.Login legend {
+  font-size: 2.3rem;
+  font-weight: bolder;
+  display: block;
+  margin: 5px;
+  text-align: center;
+  height: 3.5rem;
+}
+.Login legend span {
+  background: rgb(113, 153, 239);
+  background: -moz-linear-gradient(
+    170deg,
+    rgba(113, 153, 239, 1) 22%,
+    rgba(68, 193, 233, 1) 85%
+  );
+  background: -webkit-linear-gradient(
+    170deg,
+    rgba(113, 153, 239, 1) 22%,
+    rgba(68, 193, 233, 1) 85%
+  );
+  background: linear-gradient(
+    170deg,
+    rgba(113, 153, 239, 1) 22%,
+    rgba(68, 193, 233, 1) 85%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7199ef",endColorstr="#44c1e9",GradientType=1);
+  background-clip: text;
+  color: transparent;
+}
+.Inputs {
+  padding: 2.4rem 2.2rem 0rem 2.2rem;
+  background: white;
+  border-radius: 0.4rem;
+  height: 88%;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.42);
+}
+.Inputs label {
+  display: block;
+  margin: 0px;
+  padding: 0px;
+  font-size: 1.2rem;
+}
+.Inputs .InputTxt {
+  display: block;
+  width: 100%;
+  border-radius: 7px;
+  height: 1.8rem;
+  border: 1px solid lightgray;
+  padding: 0.3rem;
+  margin-bottom: 1.2rem;
+  font-size: 1.3rem;
+}
+
+.Inputs .ChkLbl {
+  display: inline-block;
+}
+.ForgotPassLink {
+  float: right;
+  color: blue;
+}
+.Seperator {
+  margin: 1.8rem 0;
+  color: gray;
+  text-align: center;
+  font-size: 1.1rem;
+}
+.Line {
+  display: inline-block;
+  height: 1px;
+  width: 30%;
+  margin: 0.25rem 1rem;
+  background: gray;
+}
+.Signin {
+  margin-top: 0.8rem;
+  display: block;
+  width: 100%;
+  border: transparent 1px solid;
+  border-radius: 8px;
+  height: 2.4rem;
+  color: white;
+  font-size: 1.1rem;
+  background: #5046e3;
+  display: flex;
+  align-items: center;
+}
+.Signin svg {
+  display: inline-block;
+  height: 50%;
+  color: #6366f1;
+  margin: 2%;
+}
+.Signin p {
+  display: inline-block;
+  align-content: center;
+  padding-left: 36.3%;
+}
+.OtherOptions {
+  width: 100%;
+  color: red;
+  display: flex;
+  justify-content: center;
+}
+.OtherOptions label {
+  width: 50%;
+  border-radius: 7px;
+  margin: 0 3%;
+  height: 3rem;
+  color: gray;
+  border: 1px solid gray;
+  display: inline-block;
+  text-align: center;
+  align-content: center;
+}
+.OtherOptions button {
+  display: none;
+  cursor: pointer;
+}
+.OtherOptions label svg {
+  height: 70%;
+  margin-top: 5%;
+  padding-left: 5%;
+}
+.GitBtn svg {
+  margin-top: 3.2% !important;
+}
+.MakeAcc {
+  width: 100%;
+  margin: 2rem 0.5rem 0.9rem 0.5rem;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+}
+.MakeAcc h3 {
+  display: inline-block;
+}
+.MakeAcc a {
+  color: blue;
+  font-weight: bolder;
+}
+.info {
+  width: 100%;
+  color: gray;
+  margin: 0;
+  padding: 0;
+}
+.info p {
+  margin: 0;
+  padding: 0 1.5rem;
+}
