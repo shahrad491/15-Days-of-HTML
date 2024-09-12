@@ -1,9 +1,11 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: "Times New Roman", Times, serif;
 }
 .Blog {
   margin: 1rem;
+  min-width: 60rem;
 }
 .BlogHead {
   padding: 0 3rem;
@@ -32,6 +34,7 @@
   display: inline-block;
   border-radius: 0.5rem;
   background: white;
+  position: relative;
 }
 .CardTop {
   width: 100%;
@@ -42,8 +45,8 @@
 }
 .CardBottom {
   height: 20rem;
+  max-height: 24rem;
   padding: 0 0.6rem 0rem 1.2rem;
-  position: relative;
 }
 .BCType {
   color: darkblue;
@@ -60,29 +63,32 @@
 .BCShortDescription {
   color: gray;
   padding-bottom: 1rem;
+  max-lines: 7;
 }
 .BCInfo {
   position: absolute;
-  width: 90%;
-  bottom: 8%;
+  bottom: 0.8rem;
+  width: 95%;
 }
 .BCInfo ul li:first-child {
   list-style: none;
 }
 .BCInfo ul {
+  position: relative;
+  left: 0.5rem;
   display: flex;
   justify-content: start;
   margin: 0;
 }
 .BCInfo ul li {
   margin: 0rem;
-  margin-right: 1.2rem;
+  margin-right: 1.3rem;
   color: gray;
   font-size: 1.1rem;
 }
-.BCInfo ul li::marker {
-  list-style-position: inside;
-  padding-right: 0rem;
+.BCInfo ul li:before {
+  content: "";
+  margin-right: -0.5rem;
 }
 .BCInfo ul li:last-child {
   display: none;
@@ -97,13 +103,16 @@
   height: 3rem;
   border-radius: 50%;
   float: left;
-  background: url("https://images.unsplash.com/photo-1472099645785-5658abf4ff4e");
+  object-fit: cover;
 }
 .AuthorFName {
   font-size: 1.15rem;
   font-weight: bold;
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 768px) {
+  .Blog {
+    min-width: unset;
+  }
   .BlogHead {
     padding: 0;
   }
@@ -111,6 +120,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     padding: 0;
   }
   .BlogCards .BCard {

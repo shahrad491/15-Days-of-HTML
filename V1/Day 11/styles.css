@@ -1,12 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .Main {
-  width: 600px;
-  height: 200px;
+  margin: 4rem auto;
+  width: 17rem;
+  height: 5rem;
   border: 1px solid black;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin-left: 100px;
-  margin-top: 40px;
+  text-align: center;
+  place-content: center;
 }
 .Option {
   display: none;

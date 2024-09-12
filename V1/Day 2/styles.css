@@ -1,19 +1,25 @@
-main {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  min-width: 26rem;
   background: black;
 }
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100dvh;
+}
 .post {
-  width: 26rem;
   height: 8rem;
   background: whitesmoke;
-  border-radius: 10px;
+  border-radius: 0.6rem;
   position: relative;
 }
-img {
+.ContentPic {
   display: inline-block;
   margin-top: 5%;
   margin-left: 3%;
@@ -25,7 +31,10 @@ img {
   position: absolute;
   top: 6%;
   left: 23%;
-  margin: 10px;
+  margin: 0.6rem;
+}
+.Content h2 {
+  margin-bottom: 0.4rem;
 }
 .Content p {
   color: gray;
@@ -34,7 +43,9 @@ img {
   height: 0.4rem;
   width: 0.4rem;
   background: gray;
-  margin: 0px 5px;
+  margin: 0px 0.32rem;
+  position: relative;
+  top: -0.1rem;
   border-radius: 50%;
   display: inline-block;
 }
@@ -43,9 +54,9 @@ h2 {
 }
 .Like {
   position: relative;
-  width: 80%;
+  width: 18rem;
   height: 25%;
-  margin-left: 6.6rem;
+  margin-left: 6rem;
 }
 .Like img {
   width: 1.4rem;
@@ -61,9 +72,15 @@ h2 {
   outline-offset: -1px;
 }
 .Like p {
-  margin-left: 2.6rem;
+  padding-left: 2.6rem;
+  text-overflow: clip;
   color: gray;
 }
 .Shared {
   font-weight: bolder;
+}
+@media screen and (max-width: 500px) {
+  .post {
+    margin: 0 1.5rem;
+  }
 }

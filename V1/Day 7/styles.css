@@ -5,6 +5,7 @@
 }
 body {
   font-family: sans-serif;
+  min-width: 18rem;
 }
 header {
   margin: 0.5rem;
@@ -18,8 +19,9 @@ header img {
 }
 .ProfileStuff {
   margin: 0 auto;
+  margin-left: 1rem;
   height: 6.5rem;
-  width: 88%;
+  min-width: 45rem;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -27,6 +29,7 @@ header img {
 .NamePic {
   position: relative;
   top: -4rem;
+  width: 28rem;
 }
 .NamePic img {
   display: inline-block;
@@ -38,8 +41,10 @@ header img {
   border-radius: 50%;
 }
 .NamePic h1 {
-  padding-left: 1.3rem;
   display: inline-block;
+}
+.Interact {
+  min-width: 21rem;
 }
 .Interact button {
   background: white;
@@ -59,7 +64,7 @@ header img {
   position: relative;
   top: 0.2rem;
 }
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 768px) {
   header img {
     height: 10rem;
   }
@@ -70,15 +75,21 @@ header img {
     display: block;
     position: relative;
     top: -4rem;
+    min-width: unset;
+    margin-left: unset;
   }
   .NamePic {
     position: relative;
     top: 0;
+    width: unset;
   }
   .NamePic h1 {
     display: block;
     padding: 0;
     margin-top: 1.3rem;
+  }
+  .Interact {
+    min-width: unset;
   }
   .Interact button {
     margin: 1rem 0;

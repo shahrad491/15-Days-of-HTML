@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+.container {
+  width: 230px;
+  height: 400px;
+  background: rgb(36, 145, 209);
+  position: relative;
+}
+.container:hover {
+  background: rgb(25, 101, 147);
+}
+.container:hover .overlay {
+  visibility: visible;
+  color: black;
+}
+.overlay {
+  position: absolute;
+  top: 20%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  visibility: hidden;
+}

@@ -1,22 +1,40 @@
-.main {
-  height: 100vh;
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  align-items: center;
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 20rem;
+  place-content: center;
 }
-.btn:hover + .tp {
-  visibility: visible;
-}
-.tp {
-  visibility: hidden;
-  display: block;
-  border: 1px solid black;
-  background: gray;
-  opacity: 0.7;
+.Tooltip {
+  margin-top: 10rem;
+  position: relative;
   text-align: center;
-  padding: 2px;
+  width: fit-content;
+  margin: 0 auto;
 }
-#btn1 {
+.btn {
   cursor: pointer;
+}
+.btn:hover + .Tip {
+  display: unset;
+}
+.Tip {
+  display: none;
+  position: absolute;
+  top: 130%;
+  left: 10%;
+  background: black;
+  color: white;
+  width: 4.5rem;
+  border-radius: 0.3rem;
+  padding: 0.2rem 0;
+}
+.Tip::after {
+  content: "";
+  position: absolute;
+  top: -40%;
+  left: 20%;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
 }
